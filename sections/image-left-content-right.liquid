@@ -1,0 +1,64 @@
+<section class="imgLeft-ctnRight">
+    <div class="wrapper" style="background: {{section.settings.img_left_ctn_right_bg_color}}">
+        <img class="imgLeft-ctnRight__image" src="{{section.settings.image_left | img_url: "375x"}}" alt="{{section.settings.image_left.alt}}">
+        <div class="imgLeft-ctnRight__textContainer">
+            {% for block in section.blocks %}
+                {% if block.type == "text" %}
+                    <h2 class="imgLeft-ctnRight__heading">{{block.settings.content_right_header}}</h2>
+                    <p class="imgLeft-ctnRight__text">{{block.settings.content_right_description}}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Image Left, Content Right",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image_left",
+                "label": "Image"
+            },
+            {
+                "type": "header",
+                "content": "Image Left, Content Right Color Settings"
+            },
+            {
+                "type": "paragraph",
+                "content": "Choose colors for this section"
+            },
+            {
+                "type": "color",
+                "id": "img_left_ctn_right_bg_color",
+                "label": "Image Left, Content Right Background Color",
+                "default": "#fff"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "text",
+                "name": "Content",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "content_right_header",
+                        "label": "Header"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "content_right_description",
+                        "label": "Description"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Image left, Content right",
+                "category": "About"
+            }
+        ]
+    }
+{% endschema %}

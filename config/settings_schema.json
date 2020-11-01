@@ -1,0 +1,396 @@
+[
+   {
+      "name": "theme_info",
+      "theme_name": "Themekit template theme",
+      "theme_version": "1.0.0",
+      "theme_author": "Shopify",
+      "theme_documentation_url": "https://github.com/Shopify/themekit",
+      "theme_support_email": "vncntdang@gmail.com"
+   },
+   {
+      "name": "Colors",
+      "settings": [
+         {
+            "type": "header",
+            "content": "General Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for general"
+         },
+         {
+            "type": "color",
+            "id": "color_body_text",
+            "label": "Body Text",
+            "default": "#161d25"
+         },
+         {
+            "type": "color",
+            "id": "color_main_bg",
+            "label": "Background",
+            "default": "#fff"
+         },
+         {
+            "type": "header",
+            "content": "Header Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for the header links"
+         },
+         {
+            "type": "color",
+            "id": "header_link_color",
+            "label": "Header Link Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "header_link_hover_color",
+            "label": "Header Link Hover Color",
+            "default": "#fff"
+         },
+         {
+            "type": "header",
+            "content": "Collection List Section Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for collection list section"
+         },
+         {
+            "type": "color",
+            "id": "collection_link_bg_color_1",
+            "label": "Collection Link Background Color 1",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "collection_link_text_color_1",
+            "label": "Collection Link Text Color 1",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "collection_link_bs_color_1",
+            "label": "Collection Link Boxshadow Color 1",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "collection_link_bg_color_2",
+            "label": "Collection Link Background Color 2",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "collection_link_text_color_2",
+            "label": "Collection Link Text Color 2",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "collection_link_bs_color_2",
+            "label": "Collection Link Boxshadow Color 2",
+            "default": "#fff"
+         },
+         {
+            "type": "header",
+            "content": "Collections Page Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for collection page"
+         },
+         {
+            "type": "color",
+            "id": "collection_heading_left_bg_color",
+            "label": "Collection Left Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "collection_heading_right_bg_color",
+            "label": "Collection Right Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "filter_active_link_color",
+            "label": "Filter Active Link Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "filter_link_hover_color",
+            "label": "Filter Link Hover Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "sort_by_bg_color",
+            "label": "Sort By Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "sort_by_text_color",
+            "label": "Sort By Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "product_price_text_color",
+            "label": "Product Price Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "pagination_bg_color",
+            "label": "Pagination Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "pagination_text_color",
+            "label": "Pagination Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "pagination_current_bg_color",
+            "label": "Pagination Current Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "pagination_current_text_color",
+            "label": "Pagination Current Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "header",
+            "content": "Single Product Page Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for single product page"
+         },
+         {
+            "type": "color",
+            "id": "single_product_heading_color",
+            "label": "Single Product Heading Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "size_select_bg_color",
+            "label": "Size Select Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "size_select_text_color",
+            "label": "Size Select Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "product_quantity_bg_color",
+            "label": "Quantity Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "product_quantity_text_color",
+            "label": "Quantity Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "product_submit_btn_text_color",
+            "label": "Submit Button Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "product_submit_btn_bg_color",
+            "label": "Submit Button Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "product_submit_btn_bs_color",
+            "label": "Submit Button Box Shadow Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "related_product_price_text_color",
+            "label": "Related Product Price Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "header",
+            "content": "Contact Page Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for contact page"
+         },
+         {
+            "type": "color",
+            "id": "contact_heading_left_bg_color",
+            "label": "Heading Left Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "contact_heading_right_bg_color",
+            "label": "Heading Right Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "input_border_color",
+            "label": "Input Border Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "contact_submit_btn_text_color",
+            "label": "Submit Button Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "contact_submit_btn_bg_color",
+            "label": "Submit Button Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "contact_submit_btn_bs_color",
+            "label": "Submit Button Box Shadow Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "contact_submit_btn_hover_color",
+            "label": "Submit Button Hover Color",
+            "default": "#fff"
+         },
+         {
+            "type": "header",
+            "content": "Cart Page Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for cart page"
+         },
+         {
+            "type": "color",
+            "id": "cart_heading_left_bg_color",
+            "label": "Heading Left Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_heading_right_bg_color",
+            "label": "Heading Right Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_quantity_bg_color",
+            "label": "Quantity Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_quantity_text_color",
+            "label": "Quantity Text Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_submit_btn_text_color_1",
+            "label": "Submit Button Text Color 1",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_submit_btn_bg_color_1",
+            "label": "Submit Button Background Color 1",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_submit_btn_hover_color_1",
+            "label": "Submit Button Hover Color 1",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_submit_btn_text_color_2",
+            "label": "Submit Button Text Color 2",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_submit_btn_bg_color_2",
+            "label": "Submit Button Background Color 2",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "cart_submit_btn_hover_color_2",
+            "label": "Submit Button Hover Color 2",
+            "default": "#fff"
+         },
+         {
+            "type": "header",
+            "content": "Footer Color Settings"
+         },
+         {
+            "type": "paragraph",
+            "content": "Choose colors for the footer"
+         },
+         {
+            "type": "color",
+            "id": "footer_bg_color",
+            "label": "Footer Background Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "footer_link_color",
+            "label": "Footer Link Color",
+            "default": "#fff"
+         },
+         {
+            "type": "color",
+            "id": "footer_link_hover_color",
+            "label": "Footer Link Hover Color",
+            "default": "#fff"
+         }
+      ]
+   },
+   {
+      "name": "Typography",
+      "settings": [
+         {
+            "type": "font_picker",
+            "id": "font_heading",
+            "default": "helvetica_n4",
+            "label": "Headings"
+         },
+         {
+            "type": "font_picker",
+            "id": "font_body",
+            "default": "helvetica_n4",
+            "label": "Body text"
+         }
+      ]
+   }
+]

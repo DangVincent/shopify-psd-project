@@ -1,0 +1,6 @@
+
+<select id="sort-by" class="sort-by">
+    {% for option in collection.sort_options %}
+        <option class="sort-by__options" value="{{ shop.url }}{{ collection.url }}?sort_by={{ option.value }}">{{ option.name }}</option>
+    {% endfor %}
+</select>

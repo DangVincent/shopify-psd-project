@@ -1,0 +1,55 @@
+<section class="all-products">
+  <div class="wrapper">
+    {% paginate collection.products by 9 %}
+      <h1 class="all-products__heading">candles</h1>
+      <div class="all-products__contentContainer">
+        {% if collection.all_tags.size > 0 %}
+          <div class="all-products__leftContainer">
+            <h3 class="all-products__subheading">filter by colour</h3>
+            <ul class="all-products__colorList">
+              {% for tag in collection.all_tags %}
+                {% if current_tags contains tag %}
+                  <li class="all-products__colorItem active tag-{{tag}}">
+                    {{tag | link_to_remove_tag: tag}}
+                  </li>
+                {% else %}
+                  <li class="all-products__colorItem tag-{{tag}}">
+                    {{ tag | link_to_tag: tag }}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      
+        <div class="all-products__rightContainer">
+          <div class="all-products__sortContainer">
+            <p class="all-products__text">sort by:</p>
+            {% render 'sort-by' %}
+          </div>
+          <ul class="all-products__productList">
+            {% for product in collection.products %}
+              <li class="all-products__productItem">
+                <a class="all-products__link" href="{{ product.url | within: collection }}">
+                  <img class="all-products__image" src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+                  <p class="all-products__text">{{ product.title }}</p>
+                  <p class="all-products__text">{{ product.price | money }}</p>
+                </a>
+                {% unless product.available %}
+                  <br><strong>sold out</strong>
+                {% endunless %}
+              </li>
+            {% else %}
+              <p class="all-products__text">no matches</p>
+            {% endfor %}
+          </ul>
+          <div class="all-products__pagination">
+            {% if paginate.pages > 1 %}
+              {{ paginate | default_pagination }}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endpaginate %}
+  </div>
+</section>

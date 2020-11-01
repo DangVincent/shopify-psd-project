@@ -1,0 +1,63 @@
+{%- comment -%}
+  This is a required section for the Shopify Theme Store.
+  It is available when you add "Collection list" section in the Theme Editor.
+
+  Theme Store required settings
+  - Heading: title of the collection list section
+  - Collection
+{%- endcomment -%}
+<section class="collection-list">
+  <div class="wrapper">
+    {% for block in section.blocks %}
+      <div class="collection">
+        {%- assign collection = collections[block.settings.collection] -%}
+        <img class="collection__image" src="{{ collection.image | img_url: "500x" }}" alt="{{ collection.image.alt }}">
+        <div class="collection__textContainer">
+          <h2 class="collection__subheading">{{ collection.title }}</h2>
+          <a class="collection__link" href="{{ collection.url }}">learn more</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Collection list",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collection list"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection list",
+        "category": "Collection",
+        "blocks": [
+          {
+            "type": "collection"
+          },
+          {
+            "type": "collection"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

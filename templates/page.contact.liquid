@@ -1,0 +1,24 @@
+<section class="contact">
+  <div class="wrapper">
+    <h1 class="contact__heading">{{ page.title }}</h1>
+    <div class="contact__content">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %} Thank you for your contact {% endif %}
+        {{ form.errors | default_errors }}
+        <label class="contact__label" for="ContactFormName">name:</label>
+        <input class="contact__input" type="text" id="ContactFormName" name="contact[name]">
+        <label class="contact__label" for="ContactFormEmail">email:</label>
+        <input class="contact__input" type="email" id="ContactFormEmail" name="contact[email]">
+        <label class="contact__label" for="ContactFormPhone">phone:</label>
+        <input class="contact__input" type="tel" id="ContactFormPhone" name="contact[phone]">
+        <label class="contact__label" for="ContactFormMessage">tell us about the project:</label>
+        <textarea class="contact__textarea" rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
+        <input class="contact__submit" type="submit" value="Submit">
+      {% endform %}
+      <div class="contact__textContainer">
+        <p class="contact__text">123 Street, Toronto ON</p>
+        {% section 'embed' %}
+      </div>
+    </div>
+  </div>
+</section>
